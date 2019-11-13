@@ -1,4 +1,4 @@
-    {
+   /* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,3 +14,108 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+
+/* .rugby-pitch {
+    width: 100vh;
+
+    border: 2px solid lime;
+    display: flex;
+    flex-wrap: wrap;
+}
+ */
+
+/* .playing-card {
+    width: 640px;
+    height: 640px;
+    margin: 5px;
+    position: relative;
+    border: 2px solid aqua;
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+
+
+    border: 2px solid deeppink;
+}
+
+img {
+    width: 100px;
+
+} */
+/*----------------------------------Grid Visuals--*/
+/* .playground-container {
+    border: 2px solid pink;
+}
+
+.playground-row {
+    border: 2px solid blue;
+}
+
+.playground-col {
+    border: 2px solid green;
+} */ 
+
+
+/*-----------------------Starting Again---------------------------*/
+/*---------------free code camp tutorial--------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: #060AB2;
+}
+
+.rugby-pitch {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    
+}
+
+.playing-card{
+    width: calc(25% - 10px);
+    height: calc(33.33% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    
+}
+
+.playing-card:active {
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.playing-card.flip {
+    transform: rotateY(180deg);
+}
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: #1c7ccc;
+    border: 2px solid deeppink;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+/* img {
+    width: 100px;
+} */
