@@ -10,9 +10,10 @@ class GameSounds {
         this.matchSound = new randomWin();
         this.matchFail = new randomFail();
     }
-    startbgSound() {
+    startBgSound() {
         this.bgSound.play();
     }
+    
 }
 
 function randomWin() {
@@ -56,7 +57,7 @@ function loaded() {
         instruction.addEventListener('click', () => {
             instruction.classList.remove('visible');
             // game.startGame();
-            let gameSounds = new GameSounds();
+            // let gameSounds = new GameSounds();
         })
     });
     cards.forEach(card => {
